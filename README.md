@@ -17,7 +17,8 @@ Aplicativo desktop em Python que captura o conteúdo da tela, extrai texto via O
 
 ### 🎬 Demo
 
-![DEMO da ferramenta](DEMO.png)
+![J.A.R.V.I.S. em ação](images/JARVIS.PNG)
+
 
 <img src="demo.gif" alt="Demonstração em GIF" width="600"/>
 
