@@ -1,48 +1,55 @@
-# J.A.R.V.I.S.
+# J.A.R.V.I.S. – Leitor de Tela com IA 🎯
 
-**Justificador Automático para Resumo e Validação de Informações na Superfície**  
-Um assistente de leitura de tela com OCR + IA generativa (Gemini) que interpreta automaticamente o conteúdo visível no seu monitor e responde perguntas ou gera resumos, dependendo do contexto.
-
-![Demonstração](demo.gif)
+### 🧠 Descrição
+Aplicativo desktop em Python que captura o conteúdo da tela, extrai texto via OCR e envia para a IA Gemini, retornando respostas inteligentes, resumos ou explicações — ideal para estudos, trabalho e acessibilidade.
 
 ---
 
-## ✨ Funcionalidades
+### ✅ Funcionalidades
+- 📸 Captura da tela via PyAutoGUI + OCR (Tesseract).
+- 🎯 Reconhecimento automático de perguntas ou conteúdos gerais.
+- 🧠 Geração de respostas/resumos com Gemini 1.5 Flash (Google).
+- 🪟 Interface gráfica em Tkinter com botão e atalho `CMD + L`.
+- 🧹 Histórico limpo automaticamente ao encerrar o programa.
+- 🔤 Tipografia ajustada para melhor legibilidade.
 
-- 📸 Captura o conteúdo visível na tela do usuário
-- 🧠 Usa OCR (Tesseract) para extrair texto da imagem
-- 🤖 Interage com o modelo Gemini para interpretar ou responder ao conteúdo
-- 🧼 Resumo inteligente quando não há pergunta detectada
-- 💾 Histórico salvo automaticamente durante o uso
-- 🔒 Histórico é apagado ao encerrar o app
-- ⚡ Atalho CMD+L para leitura instantânea
-- 💻 Interface gráfica simples com Tkinter
+---
+
+### 🎬 Demo
+
+![DEMO da ferramenta](DEMO.png)
+
+<img src="demo.gif" alt="Demonstração em GIF" width="600"/>
 
 ---
 
 ## 🚀 Como executar
 
-1. Clone este repositório:
+1. **Clone este repositório:**
 
 ```bash
-git clone https://github.com/seuusuario/J.A.R.V.I.S.git
+git clone https://github.com/willianbarbosadeandrade/J.A.R.V.I.S.git
 cd J.A.R.V.I.S
 ```
 
-2. Instale os requisitos:
+2. **Instale as dependências:**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Adicione sua chave da API Gemini em `config.py`:
+3. **Configure sua chave da API Gemini:**
+
+Crie um arquivo `config.py` com o seguinte conteúdo:
 
 ```python
 # config.py
 GEMINI_API_KEY = "sua-chave-aqui"
 ```
 
-4. Execute:
+Você pode usar o `config.py.example` como base.
+
+4. **Execute o aplicativo:**
 
 ```bash
 python main.py
@@ -52,12 +59,12 @@ python main.py
 
 ## 🧪 Tecnologias utilizadas
 
-- Python 3.13
-- OCR: pytesseract + PIL
-- GUI: Tkinter
-- AI: Gemini 1.5 Flash API (Google)
-- Screenshot: PyAutoGUI
-- Clipboard: pyperclip
+- **Python 3.13**
+- **OCR:** pytesseract + PIL
+- **IA:** Gemini 1.5 Flash (Google)
+- **GUI:** Tkinter
+- **Captura de tela:** pyautogui
+- **Clipboard:** pyperclip
 
 ---
 
@@ -65,12 +72,13 @@ python main.py
 
 ```
 J.A.R.V.I.S/
-├── main.py               # Código principal do app
-├── config.py             # API Key da Gemini
-├── requirements.txt      # Dependências do projeto
-├── .gitignore            # Ignora cache/histórico
-├── historico/            # Arquivos gerados durante o uso
-├── demo.gif              # Demonstração visual (GIF)
+├── main.py
+├── config.py.example
+├── requirements.txt
+├── .gitignore
+├── DEMO.png
+├── demo.gif
+└── README.md
 ```
 
 ---
@@ -78,8 +86,8 @@ J.A.R.V.I.S/
 ## 👤 Autor
 
 Desenvolvido por **Willian Barbosa**  
-🔗 [LinkedIn](https://www.linkedin.com/in/seuperfil)  
-📬 willianandrade@example.com
+🔗 [LinkedIn](https://www.linkedin.com/in/willianbarbosadeandrade)  
+📬 willianbarbosadeandrade@gmail.com
 
 ---
 
