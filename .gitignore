@@ -1,0 +1,6 @@
+__pycache__/
+historico/
+*.pyc
+*.pyo
+*.log
+.DS_Store
